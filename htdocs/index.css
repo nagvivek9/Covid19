@@ -17,3 +17,13 @@
  width:300px;
  height:200px;
 }
+#mainForm {
+ width:300px;
+ height:400px;
+}
+.listitem {
+ border: 1px solid grey;
+ height:25px;
+ width:100%;
+ pointer: pointer;
+}
