@@ -1,7 +1,7 @@
 const localstore=new dataStore();
 localstore.initialize();
 const https_client=new http_worker();
-https_client.init('localhost',3000)
+https_client.init('http://localhost',3000)
 
 const screens=['loginscreen','mainscreen'];
 function showScreen(id) {
@@ -16,7 +16,13 @@ function pageload() {
 }
 
 function onlogin() {
- https_client.request('login',{},function(e,r){
-
+ var username=document.getElementById('txt_username').value;
+ var password=document.getElementById('txt_password').value;
+ https_client.request('login',{username:username,password:password},function(e,r){
+  if(e) return console.log('Failed to login');
+  if(r.status=='ok') {
+   localstore.storeLocalData('token',r.token);
+   showScreen('mainscreen');
+  }
  });
 }
