@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/nagvivek9/Covid19/issues"
   },
-  "homepage": "https://github.com/nagvivek9/Covid19#readme"
+  "homepage": "https://github.com/nagvivek9/Covid19#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "path": "^0.12.7"
+  }
 }
