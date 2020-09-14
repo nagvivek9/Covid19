@@ -4,9 +4,9 @@ const logthru = ['trace','debug','info','warn','error','fatal'].reduce(function(
  return p;
 },{});
 const mysql=require('./mysql')({config: {default: {
- host: 'us-cdbr-iron-east-03.cleardb.net',
- user: 'bffceedc8f4f44', password: '20c60fa7',
- database: 'heroku_54ea66f27e2e831',
+ host: 'yourhost',
+ user: 'username', password: 'pwd',
+ database: 'db',
  meta_database: 'meta'
 }},
 logger: logthru});
