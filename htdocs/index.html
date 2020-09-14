@@ -1,9 +1,31 @@
 <html>
  <head>
-
+  <link href="index.css" rel="stylesheet">
  </head>
  <body onload="pageload()">
-  Here is the page
+  <div id="loginscreen" class="screen">
+   <div class="innerscreen">
+     <table width="100%" height="100%">
+      <tr>
+       <td style="width:100%; height:100%" align="center" valign="middle">
+        <div id="loginForm">
+         <input type="text" placeholder="username" id="txt_username"/>
+         <input type="text" placeholder="password" id="txt_password"/><br/><br/>
+         <input type="button" onclick="onlogin()" value="login"/>
+        </div>
+       </td>
+      </tr>
+     </table>
+   </div>
+  </div>
+
+  <div id="mainscreen" class="screen">
+   <div class="innerscreen">
+    main screen
+   </div>
+  </div>
+
+
   <script src="./storage.js"></script>
   <script src="./http.js"></script>
   <script src="./index.js"></script>
