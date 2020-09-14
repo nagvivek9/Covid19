@@ -1,0 +1,19 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "A sample application that can serve a webpage to show Covid details for states",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagvivek9/Covid19.git"
+  },
+  "author": "Nagendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagvivek9/Covid19/issues"
+  },
+  "homepage": "https://github.com/nagvivek9/Covid19#readme"
+}
