@@ -10,5 +10,13 @@ function showScreen(id) {
 }
 
 function pageload() {
- console.log('Pageloaded');
+ const isLoggedIn=localstore.getLocalData('token','');
+ if(isLoggedIn) showScreen('mainscreen');
+ else showScreen('loginscreen');
+}
+
+function onlogin() {
+ https_client.request('login',{},function(e,r){
+
+ });
 }
